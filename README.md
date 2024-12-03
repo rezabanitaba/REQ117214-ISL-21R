@@ -120,6 +120,7 @@ project/
 │   ├── __init__.py    
 │   ├── engine.py         # Rules engine implementation
 ├── tests/
+│   ├── __init__.py
 │   ├── test_engine.py    # Unit tests for rules engine
 ├── main.py               # Main file for the MQTT rules engine
 ├── publish.py            # Script for publishing mock data to MQTT
