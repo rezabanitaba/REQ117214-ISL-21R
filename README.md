@@ -16,7 +16,11 @@ This repository contains the solution for implementing a rules engine for determ
 - Python 3.8+
 
 ### Setting Up the Environment
-
+**Clone the repository**:
+```bash
+   git clone https://github.com/rezabanitaba/REQ117214-ISL-21R
+   cd REQ117214-ISL-21R
+```
 1. Open the `.env` file located in the project root directory in an editor of your choice.
 2. Add the MQTT topic ID to the file:
 
@@ -63,7 +67,7 @@ This repository contains the solution for implementing a rules engine for determ
    You should see:
 
    ```plaintext
-   MQTT Client connected. Listening for messages...
+   Connection established. Listening for incoming messages...
    ```
 
 ### Submit Data Using the Web App
