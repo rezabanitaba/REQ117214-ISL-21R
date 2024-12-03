@@ -40,6 +40,7 @@ The Winter Supplement Rules Engine assesses a client’s eligibility for the Win
 2. **Activate the virtual environment**:
    - On **Windows**:
      ```bash
+     python -m venv venv
      .\venv\Scripts\activate
      ```
    - On **macOS/Linux**:
