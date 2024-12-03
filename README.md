@@ -117,16 +117,15 @@ If the web app does not function as expected, simulate its behavior using the fo
 ```plaintext
 project/
 ├── rules_engine/
-│   ├── __init__.py       # Core rules engine logic
+│   ├── __init__.py    
 │   ├── engine.py         # Rules engine implementation
 ├── tests/
 │   ├── test_engine.py    # Unit tests for rules engine
-│   ├── test_main.py      # Unit tests for MQTT integration
-├── main.py               # Main entry point for the MQTT rules engine
+├── main.py               # Main file for the MQTT rules engine
 ├── publish.py            # Script for publishing mock data to MQTT
 ├── requirements.txt      # List of dependencies
 ├── .env                  # Environment variables
-├── README.md             # Documentation
+├── README.md             
 ```
 
 ---
