@@ -1,3 +1,4 @@
+
 # Winter Supplement Rules Engine
 
 This repository contains the solution for implementing a rules engine for determining eligibility and calculating the Winter Supplement benefit.
@@ -29,7 +30,17 @@ This repository contains the solution for implementing a rules engine for determ
    cd REQ117214-ISL-21R
    ```
 
-2. **Edit the `.env` file**:
+2. **Activate the virtual environment**:
+   - On **Windows**:
+     ```bash
+     .\venv\Scripts\activate
+     ```
+   - On **macOS/Linux**:
+     ```bash
+     source venv/bin/activate
+     ```
+
+3. **Edit the `.env` file**:
    - Open the `.env` file located in the project root directory in an editor of your choice.
    - Add the MQTT topic ID to the file:
      ```plaintext
@@ -37,7 +48,7 @@ This repository contains the solution for implementing a rules engine for determ
      ```
    ⚠️ If the web application does not publish correctly to the MQTT broker during your testing, you can use any arbitrary string for the topic ID to simulate and test locally.
 
-3. **Install dependencies**:
+4. **Install dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
@@ -122,6 +133,7 @@ project/
 ├── tests/
 │   ├── __init__.py
 │   ├── test_engine.py    # Unit tests for rules engine
+│   ├── test_mqtt.py      # Unit tests for MQTT
 ├── main.py               # Main file for the MQTT rules engine
 ├── publish.py            # Script for publishing mock data to MQTT
 ├── requirements.txt      # List of dependencies
