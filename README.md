@@ -7,8 +7,6 @@ This repository contains the solution for implementing a rules engine for determ
 - [Running the Rules Engine](#running-the-rules-engine)
 - [Updating the MQTT Topic ID](#updating-the-mqtt-topic-id)
 - [Testing the Solution](#testing-the-solution)
-- [Assumptions and Inferences](#assumptions-and-inferences)
-
 ---
 
 ### Prerequisites
@@ -121,6 +119,15 @@ If the web app does not function as expected, simulate its behavior using the fo
    ```bash
     python publish.py
    ```
-3. Verify the result in the output topic using [MQTT Explorer](https://mqtt-explorer.com/) or by monitoring the terminal logs of `main.py`.
+   This file publishes the sample data to the MQTT topic ID.
+   ```
+   test_data = {
+    "id": "test123456",
+    "numberOfChildren": 3,
+    "familyComposition": "single",
+    "familyUnitInPayForDecember": True,
+     }
+   ```
+4. Now you can view the output provided by the engine by monitoring the terminal logs of `main.py` or by using [MQTT Explorer](https://mqtt-explorer.com/) .
 
 ---
